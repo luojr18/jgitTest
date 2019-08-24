@@ -30,10 +30,6 @@ public class SampleDemo {
     public String hello(){
         return "hello";
     }
-    @GetMapping("/find")
-    public String find(){
-        return "你好";
-    }
     @GetMapping("/time")
     public Date checkTime(){
         return new Date();
