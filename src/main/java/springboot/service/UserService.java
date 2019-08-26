@@ -13,5 +13,6 @@ public class UserService {
         return userDao.add(u);
     }
     public void updateUser(User user){
+        System.out.println("user");
     }
 }
