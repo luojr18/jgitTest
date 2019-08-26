@@ -28,6 +28,7 @@ public class SampleDemo {
     }
     @GetMapping("/test")
     public String hello(){
+        System.out.println("hello");
         return "hello";
     }
     @GetMapping("/time")
