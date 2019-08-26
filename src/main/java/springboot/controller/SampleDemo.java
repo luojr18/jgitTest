@@ -35,4 +35,9 @@ public class SampleDemo {
     public Date checkTime(){
         return new Date();
     }
+    @GetMapping("/currentTime")
+    public long getTime(){
+        long millis = System.currentTimeMillis();
+        return millis;
+    }
 }
