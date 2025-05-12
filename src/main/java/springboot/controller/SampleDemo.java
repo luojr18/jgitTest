@@ -18,7 +18,8 @@ public class SampleDemo {
         try {
              userService.insertUser(user);
             if (user != null){
-                System.out.println("===========================");
+                // 增加注释
+                System.out.println("===========打印变更================");
                 return user;
             }
         } catch (Exception e) {
@@ -26,10 +27,13 @@ public class SampleDemo {
         }
         return null;
     }
+    /**
+    *无参方法
+    */
     @GetMapping("/test")
     public String hello(){
         System.out.println("hello");
-        return "hello";
+        return "hello world";
     }
     @GetMapping("/time")
     public Date checkTime(){
