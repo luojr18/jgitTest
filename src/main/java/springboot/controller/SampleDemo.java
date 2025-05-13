@@ -27,9 +27,6 @@ public class SampleDemo {
         }
         return null;
     }
-    /**
-    *无参方法
-    */
     @GetMapping("/test")
     public String hello(){
         System.out.println("hello");
@@ -42,6 +39,7 @@ public class SampleDemo {
     @GetMapping("/currentTime")
     public long getTime(){
         long millis = System.currentTimeMillis();
+          System.out.println("hello");
         return millis;
     }
 }
